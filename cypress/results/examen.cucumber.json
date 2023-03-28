@@ -1,0 +1,53 @@
+[
+  {
+    "description": "\tPruebas automatizadas del Examen",
+    "keyword": "Feature",
+    "name": "Examen",
+    "line": 1,
+    "id": "examen",
+    "tags": [],
+    "uri": "examen.feature",
+    "elements": [
+      {
+        "id": "examen;01)-validación-ok",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "01) Validación OK",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Validar Login Exitoso",
+            "result": {
+              "status": "passed",
+              "duration": 604000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "examen;02)-validación-error",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "02) Validación Error",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Validar Login Errado",
+            "result": {
+              "status": "passed",
+              "duration": 246000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

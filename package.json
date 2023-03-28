@@ -1,0 +1,27 @@
+{
+  "name": "pruebas-automatizadas",
+  "version": "1.0.0",
+  "description": "Test E2E",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open --browser electron --e2e"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e",
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/results",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "Evol TSNet",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.8.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-plugin-tab": "^1.0.5",
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  }
+}
